@@ -1,0 +1,6 @@
+[submodule "src/L0gg3r.Base"]
+	path = src/L0gg3r.Base
+	url = https://github.com/WolfBublitz/L0gg3r.Base.git
+[submodule "src/L0gg3r"]
+	path = src/L0gg3r
+	url = https://github.com/WolfBublitz/L0gg3r.git

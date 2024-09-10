@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5D1C184E-95E2-43F1-867B-9CB6447967B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "L0gg3r", "L0gg3r", "{5351FFEF-907B-4F78-9A0C-A1A75A26B003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L0gg3r", "src\L0gg3r\src\L0gg3r.csproj", "{054A267B-3479-460F-8702-B0A56BEE1FD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "L0gg3r.Base", "L0gg3r.Base", "{BCA307E0-8823-493D-8308-111028EF2A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L0gg3r.Base", "src\L0gg3r.Base\src\L0gg3r.Base.csproj", "{AB7A2F4F-4018-43C8-9498-65F9C43011DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{054A267B-3479-460F-8702-B0A56BEE1FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054A267B-3479-460F-8702-B0A56BEE1FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054A267B-3479-460F-8702-B0A56BEE1FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054A267B-3479-460F-8702-B0A56BEE1FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7A2F4F-4018-43C8-9498-65F9C43011DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7A2F4F-4018-43C8-9498-65F9C43011DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7A2F4F-4018-43C8-9498-65F9C43011DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7A2F4F-4018-43C8-9498-65F9C43011DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5351FFEF-907B-4F78-9A0C-A1A75A26B003} = {5D1C184E-95E2-43F1-867B-9CB6447967B0}
+		{054A267B-3479-460F-8702-B0A56BEE1FD9} = {5351FFEF-907B-4F78-9A0C-A1A75A26B003}
+		{BCA307E0-8823-493D-8308-111028EF2A78} = {5D1C184E-95E2-43F1-867B-9CB6447967B0}
+		{AB7A2F4F-4018-43C8-9498-65F9C43011DA} = {BCA307E0-8823-493D-8308-111028EF2A78}
+	EndGlobalSection
+EndGlobal
