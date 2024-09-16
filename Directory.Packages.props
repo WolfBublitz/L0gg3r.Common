@@ -4,13 +4,32 @@
     <NoWarn>NU1507</NoWarn>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageVersion Include="L0gg3r.Base" Version="[1.0.0-preview.16, 2)" />
-    <PackageVersion Include="MinVer" Version="[4, 5)" />
-  </ItemGroup>
-
+  <!-- L0gg3r Packages -->
   <ItemGroup>
     <GlobalPackageReference Include="L0gg3r.CodeAnalyzer" Version="[1.0.0-preview.2, 2)" />
+    <PackageVersion Include="L0gg3r.Base" Version="[1.0.0-preview.16, 2)" />
+  </ItemGroup>
+
+  <!-- 3rd Party Dependencies -->
+  <ItemGroup>
     <GlobalPackageReference Include="Microsoft.CodeAnalysis.PublicApiAnalyzers" Version="[3.3.4, 4)" />
+
+    <PackageVersion Include="BenchmarkDotNet" Version="[0.13.12, 1)" />
+
+    <PackageVersion Include="coverlet.collector" Version="[6.0.2, 7)" />
+    <PackageVersion Include="coverlet.msbuild" Version="[6.0.2, 7)" />
+
+    <PackageVersion Include="FluentAssertions" Version="[6.12.0, 7)" />
+    <PackageVersion Include="Moq" Version="[4.20.70, 5)" />
+
+    <PackageVersion Include="Microsoft.Extensions.TimeProvider.Testing" Version="[8.4.0, 9)" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="[17.8.0, 18)" />
+    
+    <PackageVersion Include="MSTest.TestAdapter" Version="[3.3.0, 4)" />
+    <PackageVersion Include="MSTest.TestFramework" Version="[3.3.0, 4)" />
+    
+    <PackageVersion Include="MinVer" Version="[4, 5)" />
+
+    <PackageVersion Include="Verify.MSTest" Version="[23.5.2, 24)" />
   </ItemGroup>
 </Project>

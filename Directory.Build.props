@@ -1,6 +1,7 @@
 <Project>
     <PropertyGroup>
         <ProjectsDir>$(MSBuildThisFileDirectory)src</ProjectsDir>
+        <UseProjectReferences>true</UseProjectReferences>
     </PropertyGroup>
 
     <Target Name="Copy Dependencies" BeforeTargets="BeforeBuild">
