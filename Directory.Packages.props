@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <NoWarn>NU1507</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="L0gg3r.Base" Version="[1.0.0-preview.16, 2)" />
+    <PackageVersion Include="MinVer" Version="[4, 5)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <GlobalPackageReference Include="L0gg3r.CodeAnalyzer" Version="[1.0.0-preview.2, 2)" />
+    <GlobalPackageReference Include="Microsoft.CodeAnalysis.PublicApiAnalyzers" Version="[3.3.4, 4)" />
+  </ItemGroup>
+</Project>
