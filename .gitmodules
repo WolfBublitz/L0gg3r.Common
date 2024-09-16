@@ -4,3 +4,6 @@
 [submodule "src/L0gg3r"]
 	path = src/L0gg3r
 	url = https://github.com/WolfBublitz/L0gg3r.git
+[submodule "src/L0gg3r.LogSinks.Base"]
+	path = src/L0gg3r.LogSinks.Base
+	url = https://github.com/WolfBublitz/L0gg3r.LogSinks.Base.git
