@@ -1,0 +1,9 @@
+<Project>
+    <PropertyGroup>
+        <ProjectsDir>$(MSBuildThisFileDirectory)src</ProjectsDir>
+    </PropertyGroup>
+
+    <Target Name="Copy Dependencies" BeforeTargets="BeforeBuild">
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)/Directory.Packages.props" DestinationFolder="$(ProjectDir).." ContinueOnError="true" />
+    </Target>
+</Project>
