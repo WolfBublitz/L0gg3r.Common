@@ -13,3 +13,6 @@
 [submodule "src/L0gg3r.LogSinks.Console.SmartConsoleLogSink"]
 	path = src/L0gg3r.LogSinks.Console.SmartConsoleLogSink
 	url = https://github.com/WolfBublitz/L0gg3r.LogSinks.Console.SmartConsoleLogSink.git
+[submodule "src/L0gg3r.Builder"]
+	path = src/L0gg3r.Builder
+	url = https://github.com/WolfBublitz/L0gg3r.Builder.git

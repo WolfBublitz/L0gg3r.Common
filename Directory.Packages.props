@@ -7,7 +7,13 @@
   <!-- L0gg3r Packages -->
   <ItemGroup>
     <GlobalPackageReference Include="L0gg3r.CodeAnalyzer" Version="[1.0.0-preview.2, 2)" />
+
+    <PackageVersion Include="L0gg3r" Version="[1.0.0-preview.9, 2)" />
     <PackageVersion Include="L0gg3r.Base" Version="[1.0.0-preview.16, 2)" />
+    <PackageVersion Include="L0gg3r.Builder" Version="[1.0.0-preview.2, 2)" />
+    <PackageVersion Include="L0gg3r.LogSinks.Base" Version="[1.0.0-preview.7, 2)" />
+
+    <PackageVersion Include="WB.TestUtils" Version="[1, 2)" />
   </ItemGroup>
 
   <!-- 3rd Party Dependencies -->
@@ -29,6 +35,8 @@
     <PackageVersion Include="MSTest.TestFramework" Version="[3.3.0, 4)" />
     
     <PackageVersion Include="MinVer" Version="[4, 5)" />
+
+    <PackageVersion Include="SmartFormat.NET" Version="[3.3.2, 4)" />
 
     <PackageVersion Include="Verify.MSTest" Version="[23.5.2, 24)" />
   </ItemGroup>

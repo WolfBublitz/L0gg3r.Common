@@ -25,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "L0gg3r.LogSinks.Console.Sma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L0gg3r.LogSinks.Console.SmartConsoleLogSink", "src\L0gg3r.LogSinks.Console.SmartConsoleLogSink\src\L0gg3r.LogSinks.Console.SmartConsoleLogSink.csproj", "{749138B8-82E9-407D-BCE1-B4FD06088AC9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "L0gg3r.Builder", "L0gg3r.Builder", "{309A85FD-D994-4978-BC95-2A7404228D5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L0gg3r.Builder", "src\L0gg3r.Builder\src\L0gg3r.Builder.csproj", "{AF458E19-46FB-4D81-BA1C-3F300072C9D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{749138B8-82E9-407D-BCE1-B4FD06088AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{749138B8-82E9-407D-BCE1-B4FD06088AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{749138B8-82E9-407D-BCE1-B4FD06088AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF458E19-46FB-4D81-BA1C-3F300072C9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF458E19-46FB-4D81-BA1C-3F300072C9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF458E19-46FB-4D81-BA1C-3F300072C9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF458E19-46FB-4D81-BA1C-3F300072C9D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,5 +74,7 @@ Global
 		{02612309-6945-47EF-B569-D12F529D5390} = {2F75E5B4-0778-438A-B98B-5308D801D011}
 		{8DB4A4AC-AE9C-4108-B344-16A2FF5A1B7B} = {5D1C184E-95E2-43F1-867B-9CB6447967B0}
 		{749138B8-82E9-407D-BCE1-B4FD06088AC9} = {8DB4A4AC-AE9C-4108-B344-16A2FF5A1B7B}
+		{309A85FD-D994-4978-BC95-2A7404228D5F} = {5D1C184E-95E2-43F1-867B-9CB6447967B0}
+		{AF458E19-46FB-4D81-BA1C-3F300072C9D1} = {309A85FD-D994-4978-BC95-2A7404228D5F}
 	EndGlobalSection
 EndGlobal
