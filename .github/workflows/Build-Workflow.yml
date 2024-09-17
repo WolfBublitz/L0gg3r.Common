@@ -1,0 +1,150 @@
+name: L0gg3r.Common
+on: push
+jobs:
+  L0gg3r:
+    name: Building L0gg3r
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        token: ${{ secrets.SUBMODULE_TOKEN }}
+    - name: Update Submodules
+      run: git submodule update --init --recursive
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 8.0.x
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Test
+      run: dotnet build /Users/wolf/Coden/L0gg3r.Common/src/L0gg3r/src/L0gg3r.csproj -c Release
+  L0gg3rBase:
+    name: Building L0gg3r.Base
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        token: ${{ secrets.SUBMODULE_TOKEN }}
+    - name: Update Submodules
+      run: git submodule update --init --recursive
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 8.0.x
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Test
+      run: dotnet build /Users/wolf/Coden/L0gg3r.Common/src/L0gg3r.Base/src/L0gg3r.Base.csproj -c Release
+  L0gg3rBuilder:
+    name: Building L0gg3r.Builder
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        token: ${{ secrets.SUBMODULE_TOKEN }}
+    - name: Update Submodules
+      run: git submodule update --init --recursive
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 8.0.x
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Test
+      run: dotnet build /Users/wolf/Coden/L0gg3r.Common/src/L0gg3r.Builder/src/L0gg3r.Builder.csproj -c Release
+  L0gg3rExtensionsHosting:
+    name: Building L0gg3r.Extensions.Hosting
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        token: ${{ secrets.SUBMODULE_TOKEN }}
+    - name: Update Submodules
+      run: git submodule update --init --recursive
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 8.0.x
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Test
+      run: dotnet build /Users/wolf/Coden/L0gg3r.Common/src/L0gg3r.Extensions.Hosting/src/L0gg3r.Extensions.Hosting.csproj -c Release
+  L0gg3rLogSinksBase:
+    name: Building L0gg3r.LogSinks.Base
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        token: ${{ secrets.SUBMODULE_TOKEN }}
+    - name: Update Submodules
+      run: git submodule update --init --recursive
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 8.0.x
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Test
+      run: dotnet build /Users/wolf/Coden/L0gg3r.Common/src/L0gg3r.LogSinks.Base/src/L0gg3r.LogSinks.Base.csproj -c Release
+  L0gg3rLogSinksConsoleBase:
+    name: Building L0gg3r.LogSinks.Console.Base
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        token: ${{ secrets.SUBMODULE_TOKEN }}
+    - name: Update Submodules
+      run: git submodule update --init --recursive
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 8.0.x
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Test
+      run: dotnet build /Users/wolf/Coden/L0gg3r.Common/src/L0gg3r.LogSinks.Console.Base/src/L0gg3r.LogSinks.Console.Base.csproj -c Release
+  L0gg3rLogSinksConsoleSmartConsoleLogSink:
+    name: Building L0gg3r.LogSinks.Console.SmartConsoleLogSink
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        token: ${{ secrets.SUBMODULE_TOKEN }}
+    - name: Update Submodules
+      run: git submodule update --init --recursive
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 8.0.x
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Test
+      run: dotnet build /Users/wolf/Coden/L0gg3r.Common/src/L0gg3r.LogSinks.Console.SmartConsoleLogSink/src/L0gg3r.LogSinks.Console.SmartConsoleLogSink.csproj -c Release
