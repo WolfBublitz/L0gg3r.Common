@@ -30,3 +30,7 @@ jobs:
         run: git submodule update --init --recursive
       - name: "Build Test Workflow file"
         run: nuke CreateGithubTestWorkflow
+  Tests:
+    name: "Tests"
+    uses: ./.github/workflows/Test-Jobs.yml
+    needs: [CreateTestWorkflow]
