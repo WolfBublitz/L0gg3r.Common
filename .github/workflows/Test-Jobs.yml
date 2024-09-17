@@ -19,7 +19,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r.LogSinks.Base/tests/LogSinkBaseTests/src/LogSinkBaseTests.csproj -c Release
   LogLevelTests:
@@ -40,7 +40,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r.Base/tests/LogLevelTests/src/LogLevelTests.csproj -c Release
   LogMessageTests:
@@ -61,7 +61,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r.Base/tests/LogMessageTests/src/LogMessageTests.csproj -c Release
   LogMessagePipelineTests:
@@ -82,7 +82,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r.Base/tests/LogMessagePipelineTests/src/LogMessagePipelineTests.csproj -c Release
   DisposableTests:
@@ -103,7 +103,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r.Base/tests/DisposableTests/src/DisposableTests.csproj -c Release
   SmartConsoleLogSinkTests:
@@ -124,7 +124,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r.LogSinks.Console.SmartConsoleLogSink/tests/LogMessageWriterTests/src/SmartConsoleLogSinkTests.csproj -c Release
   OutputTests:
@@ -145,7 +145,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r.LogSinks.Console.SmartConsoleLogSink/tests/OutputTests/src/OutputTests.csproj -c Release
   ConsoleLogSinkBaseTests:
@@ -166,7 +166,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r.LogSinks.Console.Base/tests/ConsoleLogSinkBaseTests/src/ConsoleLogSinkBaseTests.csproj -c Release
   LoggerTests:
@@ -187,7 +187,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r/tests/LoggerTests/src/LoggerTests.csproj -c Release
   LoggerExtensionsTests:
@@ -208,7 +208,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r/tests/LoggerExtensionsTests/src/LoggerExtensionsTests.csproj -c Release
   LoggerBuilderTests:
@@ -229,7 +229,7 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r.Builder/tests/LoggerBuilderTests/src/LoggerBuilderTests.csproj -c Release
   LogSinkBuilderTests:
@@ -250,6 +250,6 @@ jobs:
     - name: Add GitHub NuGet Source
       run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
       env:
-        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Test
       run: dotnet test src/L0gg3r.Builder/tests/LogSinkBuilderTests/src/LogSinkBuilderTests.csproj -c Release
