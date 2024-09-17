@@ -7,9 +7,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -22,9 +21,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -37,9 +35,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -52,9 +49,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -67,9 +63,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -82,9 +77,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -97,9 +91,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -112,9 +105,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -127,9 +119,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -142,9 +133,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -157,9 +147,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -172,9 +161,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: '{{ secrets.SUBMODULE_TOKEN }}'
+    - name: Update Submodules
+      run: git submodule update --init --recursive
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
