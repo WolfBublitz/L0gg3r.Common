@@ -5,6 +5,10 @@ jobs:
     name: LogSinkBaseTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -22,6 +26,10 @@ jobs:
     name: LogLevelTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -39,6 +47,10 @@ jobs:
     name: LogMessageTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -56,6 +68,10 @@ jobs:
     name: LogMessagePipelineTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -73,6 +89,10 @@ jobs:
     name: DisposableTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -90,6 +110,10 @@ jobs:
     name: SmartConsoleLogSinkTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -107,6 +131,10 @@ jobs:
     name: OutputTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -124,6 +152,10 @@ jobs:
     name: ConsoleLogSinkBaseTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -141,6 +173,10 @@ jobs:
     name: LoggerTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -158,6 +194,10 @@ jobs:
     name: LoggerExtensionsTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -175,6 +215,10 @@ jobs:
     name: LoggerBuilderTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -192,6 +236,10 @@ jobs:
     name: LogSinkBuilderTests
     runs-on: ubuntu-latest
     steps:
+    - name: Add GitHub NuGet Source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/WolfBublitz/index.json" --username WolfBublitz --password ${GITHUB_TOKEN} --store-password-in-clear-text --name github
+      env:
+        gITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout
       uses: actions/checkout@v4
       with:
